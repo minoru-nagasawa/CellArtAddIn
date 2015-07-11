@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CellArtAddIn", "CellArtAddIn\CellArtAddIn.csproj", "{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CellArtAddInSetup", "CellArtAddInSetup\CellArtAddInSetup.vdproj", "{950D8C83-3BC2-4E82-8DA2-8D962F96733C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{54A08E50-C309-42FB-ACC1-A57DCF7DAA1E}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{950D8C83-3BC2-4E82-8DA2-8D962F96733C}.CD_ROM|Any CPU.ActiveCfg = Release
+		{950D8C83-3BC2-4E82-8DA2-8D962F96733C}.Debug|Any CPU.ActiveCfg = Debug
+		{950D8C83-3BC2-4E82-8DA2-8D962F96733C}.DVD-5|Any CPU.ActiveCfg = Debug
+		{950D8C83-3BC2-4E82-8DA2-8D962F96733C}.Release|Any CPU.ActiveCfg = Release
+		{950D8C83-3BC2-4E82-8DA2-8D962F96733C}.SingleImage|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
