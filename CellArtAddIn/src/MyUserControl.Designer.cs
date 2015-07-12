@@ -38,6 +38,7 @@
             this.c_executeBtn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.c_labelSize = new System.Windows.Forms.Label();
+            this.c_pbxImage = new bambit.forms.controls.PictureBoxExtended();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.c_numResoHori = new System.Windows.Forms.NumericUpDown();
@@ -51,18 +52,17 @@
             this.c_txtTransparency = new System.Windows.Forms.TextBox();
             this.c_pbxTransparency = new System.Windows.Forms.PictureBox();
             this.c_cbxUseTransparency = new System.Windows.Forms.CheckBox();
-            this.c_pbxImage = new bambit.forms.controls.PictureBoxExtended();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c_numCellHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numCellWidth)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c_pbxImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numResoHori)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numResoVert)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c_pbxTransparency)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c_pbxImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pathTbx
@@ -71,13 +71,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pathTbx.Location = new System.Drawing.Point(3, 5);
             this.pathTbx.Name = "pathTbx";
-            this.pathTbx.Size = new System.Drawing.Size(303, 19);
+            this.pathTbx.Size = new System.Drawing.Size(322, 19);
             this.pathTbx.TabIndex = 0;
             // 
             // c_browseBtn
             // 
             this.c_browseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c_browseBtn.Location = new System.Drawing.Point(312, 3);
+            this.c_browseBtn.Location = new System.Drawing.Point(331, 3);
             this.c_browseBtn.Name = "c_browseBtn";
             this.c_browseBtn.Size = new System.Drawing.Size(75, 23);
             this.c_browseBtn.TabIndex = 1;
@@ -103,7 +103,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(3, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(303, 41);
+            this.groupBox1.Size = new System.Drawing.Size(322, 52);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cell (Pixel)";
@@ -164,7 +164,7 @@
             // 
             this.c_executeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.c_executeBtn.Enabled = false;
-            this.c_executeBtn.Location = new System.Drawing.Point(312, 36);
+            this.c_executeBtn.Location = new System.Drawing.Point(331, 36);
             this.c_executeBtn.Name = "c_executeBtn";
             this.c_executeBtn.Size = new System.Drawing.Size(75, 23);
             this.c_executeBtn.TabIndex = 2;
@@ -179,9 +179,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.c_labelSize);
             this.groupBox3.Controls.Add(this.c_pbxImage);
-            this.groupBox3.Location = new System.Drawing.Point(4, 223);
+            this.groupBox3.Location = new System.Drawing.Point(3, 252);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(383, 220);
+            this.groupBox3.Size = new System.Drawing.Size(402, 233);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Image";
@@ -189,12 +189,26 @@
             // c_labelSize
             // 
             this.c_labelSize.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.c_labelSize.Location = new System.Drawing.Point(7, 200);
+            this.c_labelSize.Location = new System.Drawing.Point(17, 213);
             this.c_labelSize.Name = "c_labelSize";
             this.c_labelSize.Size = new System.Drawing.Size(370, 17);
             this.c_labelSize.TabIndex = 1;
             this.c_labelSize.Text = "label5";
             this.c_labelSize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // c_pbxImage
+            // 
+            this.c_pbxImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.c_pbxImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.c_pbxImage.Location = new System.Drawing.Point(7, 19);
+            this.c_pbxImage.Name = "c_pbxImage";
+            this.c_pbxImage.Size = new System.Drawing.Size(389, 191);
+            this.c_pbxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.c_pbxImage.TabIndex = 0;
+            this.c_pbxImage.TabStop = false;
+            this.c_pbxImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c_pbxImage_MouseDown);
             // 
             // label4
             // 
@@ -264,9 +278,9 @@
             this.groupBox2.Controls.Add(this.c_numResoHori);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(3, 78);
+            this.groupBox2.Location = new System.Drawing.Point(3, 89);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 41);
+            this.groupBox2.Size = new System.Drawing.Size(322, 52);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resolution (Pixel per Cell)";
@@ -277,9 +291,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.c_colorMode2003);
             this.groupBox4.Controls.Add(this.c_colorModeAll);
-            this.groupBox4.Location = new System.Drawing.Point(4, 126);
+            this.groupBox4.Location = new System.Drawing.Point(3, 147);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(302, 43);
+            this.groupBox4.Size = new System.Drawing.Size(321, 52);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Color Mode";
@@ -314,16 +328,16 @@
             this.groupBox5.Controls.Add(this.c_txtTransparency);
             this.groupBox5.Controls.Add(this.c_pbxTransparency);
             this.groupBox5.Controls.Add(this.c_cbxUseTransparency);
-            this.groupBox5.Location = new System.Drawing.Point(3, 176);
+            this.groupBox5.Location = new System.Drawing.Point(3, 205);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(384, 41);
+            this.groupBox5.Size = new System.Drawing.Size(403, 41);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Transparency Color";
             // 
             // c_btnSetTransparency
             // 
-            this.c_btnSetTransparency.Location = new System.Drawing.Point(337, 14);
+            this.c_btnSetTransparency.Location = new System.Drawing.Point(355, 14);
             this.c_btnSetTransparency.Name = "c_btnSetTransparency";
             this.c_btnSetTransparency.Size = new System.Drawing.Size(41, 23);
             this.c_btnSetTransparency.TabIndex = 1;
@@ -333,7 +347,7 @@
             // 
             // c_txtTransparency
             // 
-            this.c_txtTransparency.Location = new System.Drawing.Point(185, 16);
+            this.c_txtTransparency.Location = new System.Drawing.Point(203, 16);
             this.c_txtTransparency.Name = "c_txtTransparency";
             this.c_txtTransparency.ReadOnly = true;
             this.c_txtTransparency.Size = new System.Drawing.Size(146, 19);
@@ -344,7 +358,7 @@
             // 
             this.c_pbxTransparency.BackColor = System.Drawing.Color.White;
             this.c_pbxTransparency.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c_pbxTransparency.Location = new System.Drawing.Point(158, 18);
+            this.c_pbxTransparency.Location = new System.Drawing.Point(176, 18);
             this.c_pbxTransparency.Name = "c_pbxTransparency";
             this.c_pbxTransparency.Size = new System.Drawing.Size(21, 16);
             this.c_pbxTransparency.TabIndex = 1;
@@ -360,20 +374,6 @@
             this.c_cbxUseTransparency.Text = "Use transparency color";
             this.c_cbxUseTransparency.UseVisualStyleBackColor = true;
             // 
-            // c_pbxImage
-            // 
-            this.c_pbxImage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.c_pbxImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c_pbxImage.Location = new System.Drawing.Point(7, 19);
-            this.c_pbxImage.Name = "c_pbxImage";
-            this.c_pbxImage.Size = new System.Drawing.Size(370, 178);
-            this.c_pbxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.c_pbxImage.TabIndex = 0;
-            this.c_pbxImage.TabStop = false;
-            this.c_pbxImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c_pbxImage_MouseDown);
-            // 
             // MyUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -387,11 +387,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "MyUserControl";
-            this.Size = new System.Drawing.Size(394, 446);
+            this.Size = new System.Drawing.Size(413, 488);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c_numCellHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numCellWidth)).EndInit();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c_pbxImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numResoHori)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c_numResoVert)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -400,7 +401,6 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c_pbxTransparency)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c_pbxImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
