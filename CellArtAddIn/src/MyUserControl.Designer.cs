@@ -89,7 +89,7 @@
             // 
             this.label1.Location = new System.Drawing.Point(6, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 12);
+            this.label1.Size = new System.Drawing.Size(42, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "width";
             // 
@@ -110,7 +110,7 @@
             // 
             // c_numCellHeight
             // 
-            this.c_numCellHeight.Location = new System.Drawing.Point(192, 16);
+            this.c_numCellHeight.Location = new System.Drawing.Point(215, 17);
             this.c_numCellHeight.Maximum = new decimal(new int[] {
             548,
             0,
@@ -132,7 +132,7 @@
             // 
             // c_numCellWidth
             // 
-            this.c_numCellWidth.Location = new System.Drawing.Point(44, 16);
+            this.c_numCellWidth.Location = new System.Drawing.Point(54, 17);
             this.c_numCellWidth.Maximum = new decimal(new int[] {
             2044,
             0,
@@ -154,9 +154,9 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(143, 19);
+            this.label2.Location = new System.Drawing.Point(163, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 12);
+            this.label2.Size = new System.Drawing.Size(57, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "height";
             // 
@@ -179,9 +179,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.c_labelSize);
             this.groupBox3.Controls.Add(this.c_pbxImage);
-            this.groupBox3.Location = new System.Drawing.Point(3, 252);
+            this.groupBox3.Location = new System.Drawing.Point(3, 264);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(402, 233);
+            this.groupBox3.Size = new System.Drawing.Size(402, 221);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Image";
@@ -189,7 +189,7 @@
             // c_labelSize
             // 
             this.c_labelSize.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.c_labelSize.Location = new System.Drawing.Point(17, 213);
+            this.c_labelSize.Location = new System.Drawing.Point(17, 201);
             this.c_labelSize.Name = "c_labelSize";
             this.c_labelSize.Size = new System.Drawing.Size(370, 17);
             this.c_labelSize.TabIndex = 1;
@@ -204,7 +204,7 @@
             this.c_pbxImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c_pbxImage.Location = new System.Drawing.Point(7, 19);
             this.c_pbxImage.Name = "c_pbxImage";
-            this.c_pbxImage.Size = new System.Drawing.Size(389, 191);
+            this.c_pbxImage.Size = new System.Drawing.Size(389, 179);
             this.c_pbxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.c_pbxImage.TabIndex = 0;
             this.c_pbxImage.TabStop = false;
@@ -214,21 +214,21 @@
             // 
             this.label4.Location = new System.Drawing.Point(6, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 12);
+            this.label4.Size = new System.Drawing.Size(70, 30);
             this.label4.TabIndex = 2;
             this.label4.Text = "horizontal";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(143, 19);
+            this.label3.Location = new System.Drawing.Point(163, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 12);
+            this.label3.Size = new System.Drawing.Size(67, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "vertical";
             // 
             // c_numResoHori
             // 
-            this.c_numResoHori.Location = new System.Drawing.Point(61, 16);
+            this.c_numResoHori.Location = new System.Drawing.Point(71, 16);
             this.c_numResoHori.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -250,7 +250,7 @@
             // 
             // c_numResoVert
             // 
-            this.c_numResoVert.Location = new System.Drawing.Point(192, 16);
+            this.c_numResoVert.Location = new System.Drawing.Point(215, 17);
             this.c_numResoVert.Maximum = new decimal(new int[] {
             65535,
             0,
@@ -280,7 +280,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(3, 89);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(322, 52);
+            this.groupBox2.Size = new System.Drawing.Size(402, 52);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resolution (Pixel per Cell)";
@@ -293,7 +293,7 @@
             this.groupBox4.Controls.Add(this.c_colorModeAll);
             this.groupBox4.Location = new System.Drawing.Point(3, 147);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(321, 52);
+            this.groupBox4.Size = new System.Drawing.Size(402, 52);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Color Mode";
@@ -301,7 +301,7 @@
             // c_colorMode2003
             // 
             this.c_colorMode2003.AutoSize = true;
-            this.c_colorMode2003.Location = new System.Drawing.Point(107, 19);
+            this.c_colorMode2003.Location = new System.Drawing.Point(119, 19);
             this.c_colorMode2003.Name = "c_colorMode2003";
             this.c_colorMode2003.Size = new System.Drawing.Size(190, 16);
             this.c_colorMode2003.TabIndex = 1;
@@ -330,7 +330,7 @@
             this.groupBox5.Controls.Add(this.c_cbxUseTransparency);
             this.groupBox5.Location = new System.Drawing.Point(3, 205);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(403, 41);
+            this.groupBox5.Size = new System.Drawing.Size(403, 53);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Transparency Color";
